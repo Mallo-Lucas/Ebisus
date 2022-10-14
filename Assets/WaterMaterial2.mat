@@ -115,7 +115,7 @@ Material:
     - _ReceiveShadows: 1
     - _RipleDensity: 6
     - _RipledSpeed: 2
-    - _RippleDensity: 261.6
+    - _RippleDensity: 78
     - _RippleSlimness: 13.4
     - _RippleSpeed: 2
     - _Smoothness: 0.5
@@ -123,8 +123,10 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaveSpeed: 0.1
+    - _WaveSpeed: 0.01
     - _WorkflowMode: 1
+    - _XSpeed: 0
+    - _YSpeed: 0
     - _ZWrite: 1
     m_Colors:
     - _BaseColor: {r: 0, g: 0.60698205, b: 0.93333334, a: 1}

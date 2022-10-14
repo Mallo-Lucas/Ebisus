@@ -115,7 +115,7 @@ Material:
     - _ReceiveShadows: 1
     - _RipleDensity: 6
     - _RipledSpeed: 2
-    - _RippleDensity: 261.6
+    - _RippleDensity: 707.6
     - _RippleSlimness: 13.4
     - _RippleSpeed: 2
     - _Smoothness: 0.5
