@@ -123,7 +123,7 @@ Material:
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _WaveSpeed: 0.01
+    - _WaveSpeed: 0
     - _WorkflowMode: 1
     - _XSpeed: 0
     - _YSpeed: 0
