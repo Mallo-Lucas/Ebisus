@@ -41,6 +41,7 @@ public class AnimationNode
     {
         float distance = Vector3.Distance(targetToCompareDistance.position, animatorToExecute.transform.position);
 
+        //Debug.Log(distance);
         if (distance <= distanceToExecute)
             return true;
 
