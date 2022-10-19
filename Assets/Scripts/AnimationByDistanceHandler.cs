@@ -3,12 +3,34 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class AnimationByDistanceHandler : MonoBehaviour
 {
     [SerializeField] private List<AnimationNode> animationLine = new();
+    [SerializeField] private Transform sun;
+    [SerializeField] private Animator _cameraAnimator;
+    [SerializeField] private Animator _ebisusAnimator;
+
+    private Quaternion _startRotation;
+
+    private void Awake()
+    {
+        _startRotation = sun.rotation;
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            _cameraAnimator.CrossFade("Loop19_10", 0.2f);
+            _ebisusAnimator.CrossFade("LoopFishing", 0.2f);
+            sun.rotation = _startRotation;
+        }
+    }
 
     private void Start()
     {
+
         StartCoroutine(CheckAnimationTimeline());
     }
 
