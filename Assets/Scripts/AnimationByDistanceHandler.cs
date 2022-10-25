@@ -10,6 +10,7 @@ public class AnimationByDistanceHandler : MonoBehaviour
     [SerializeField] private Transform sun;
     [SerializeField] private Animator _cameraAnimator;
     [SerializeField] private Animator _ebisusAnimator;
+    [SerializeField] private string AnimationName;
 
     private Quaternion _startRotation;
 
@@ -22,8 +23,9 @@ public class AnimationByDistanceHandler : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            _cameraAnimator.CrossFade("Loop19_10", 0.2f);
-            _ebisusAnimator.CrossFade("LoopFishing", 0.2f);
+            _cameraAnimator.CrossFade(AnimationName, 0.2f);
+            //_ebisusAnimator.CrossFade("New State", 0.2f); 
+            //_ebisusAnimator.CrossFade("Tensar", 0.2f); 
             sun.rotation = _startRotation;
         }
     }
