@@ -25,7 +25,7 @@ public class AnimationByDistanceHandler : MonoBehaviour
         {
             _cameraAnimator.CrossFade(AnimationName, 0.2f);
             //_ebisusAnimator.CrossFade("New State", 0.2f); 
-            //_ebisusAnimator.CrossFade("Tensar", 0.2f); 
+            _ebisusAnimator.CrossFade("Walk", 0.2f); 
             sun.rotation = _startRotation;
         }
     }

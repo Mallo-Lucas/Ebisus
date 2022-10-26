@@ -4,26 +4,12 @@ using UnityEngine;
 
 public class Archer : MonoBehaviour
 {
-    public Transform arrow;
-    public float arrowSpeed;
+    public Arrow arrow;
 
     public void UseArrow()
     {
-        StartCoroutine(ArrowCorrutine());
-    }
-
-    IEnumerator ArrowCorrutine()
-    {
-        float timer = 2;
-
-        arrow.parent = null;
-        
-        while(timer > 0)
-        {
-            arrow.transform.position += transform.forward * arrowSpeed * Time.deltaTime;
-            timer -= Time.deltaTime;
-            yield return null;
-        }
+        arrow.transform.parent = null;
+        arrow.Move();
     }
 }
 
